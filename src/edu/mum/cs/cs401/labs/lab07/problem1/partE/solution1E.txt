@@ -1,0 +1,13 @@
+Problem E:
+	i.	When the type D is a Class, 
+		A class can implement one or more interfaces. Furthermore, Type A, B, and C should be interfaces.
+		In the case of the "method" method, if A and B classes have a default implementation for this method, then Class D SHOULD override the method 
+		and specify which default implementation wish to call (i.e: ClassB.super.method();)
+		But, if only one of the interfaces has default method, is optional to override the method in the Class D.
+		In another case, where could be another method in an extended class with the same signature of the method from the interfaces, the method from class wins!
+
+	ii.	When the type D is an interface.
+		An interface can extends one or many interfaces, in this case the interface D can extends the interfaces B and C.
+		In the case of the "method" method, if A and B classes have a default implementation for this method, then Class D SHOULD override the method 
+		and specify which default implementation wish to call from their super types.
+		But, if only one of the classes has default method, is optional to override the method. 

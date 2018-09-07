@@ -1,0 +1,31 @@
+package edu.mum.cs.cs401.labs.lab10.problem2.javapackage;
+
+import edu.mum.cs.cs401.labs.lab10.problem2.bugreporter.BugReport;
+
+@BugReport(assignedTo="Joe Smith", severity=2, reportedBy="Corazza", description="computePerimeter incorrect")
+public class Rectangle implements ClosedCurve {
+	private double length, width;
+	public Rectangle(double length, double width) {
+		this.length = length;
+		this.width = width;
+	}
+	
+	@Override
+	public double computePerimeter() {
+		return length + width;
+	}
+	
+	
+	public double getLength() {
+		return length;
+	}
+	public void setLength(double length) {
+		this.length = length;
+	}
+	public double getWidth() {
+		return width;
+	}
+	public void setWidth(double width) {
+		this.width = width;
+	}
+}

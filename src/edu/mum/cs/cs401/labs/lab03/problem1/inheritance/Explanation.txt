@@ -1,0 +1,3 @@
+This is happening because p1 instance is created as a PersonWithJob object and p2 is created as Person object. 
+Then, when equals method is called from p1 "p1.equals(p2)" this is using the overrided method in PersonWithJob class and 
+this method is asking if the incoming object "p2" is an instance of PersonWithJob class but, p1 was not created as PersonWithJob instance.

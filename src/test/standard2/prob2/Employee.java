@@ -1,0 +1,27 @@
+package test.standard2.prob2;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Employee {
+
+	private String name;
+	private List<Account> accounts;
+
+	public Employee(String name) {
+		this.name = name;
+		accounts = new ArrayList<>();
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void addAccount(Account acct) {
+		accounts.add(acct);
+	}
+
+	public double computeUpdatedBalanceSum() {
+		return accounts.stream().map(x -> x.computeUpdateBalance()).reduce((x, y) -> x + y).get();
+	}
+}

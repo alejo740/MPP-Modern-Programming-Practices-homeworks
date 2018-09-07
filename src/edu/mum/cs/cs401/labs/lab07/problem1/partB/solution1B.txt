@@ -1,0 +1,3 @@
+Problem B:
+	The problem here is Employee class has not overridden original equals method from the Object class, it is using an own implementation of equals with different method signature. 
+	And when the listsAreEqual is checking the both list, it is using ".contains" which uses the original implementation of equals.

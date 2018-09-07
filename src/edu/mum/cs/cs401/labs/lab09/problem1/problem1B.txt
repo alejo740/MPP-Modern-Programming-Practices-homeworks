@@ -1,0 +1,4 @@
+Lab09-Problem1B
+
+Stream<String> stringStream = Stream.of("Bill", "Thomas", "Mary");
+System.out.println(stringStream.collect(Collectors.joining(", ")));

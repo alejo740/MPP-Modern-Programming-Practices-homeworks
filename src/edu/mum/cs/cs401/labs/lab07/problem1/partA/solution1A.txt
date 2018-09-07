@@ -1,0 +1,4 @@
+Problem A:
+	Class ArrayList
+		extends -> AbstractList
+		implements -> List, RandomAccess, Cloneable, java.io.Serializable, Collection, Iterable

@@ -1,0 +1,10 @@
+Lab10 - Problem 1
+
+I think TDD is a very good practice in order to keep not only the quality of code but also to think what should be are the dependencies of this method.
+During the practice of this point, I could notice during the development process of the Test, I had to think what I need to achieve the results, 
+so I had to create the basis of other methods that work as dependencies. 
+
+Another thing that I want to add is that during the development process of the Test, the developers can be focus working and testing on the specific 
+methods or classes, without think in other environmental issues or dependencies of the whole project. 
+
+To summarize, a class can be tested without building or running the whole project.  

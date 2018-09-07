@@ -1,0 +1,6 @@
+Lab09-Problem1C
+
+Stream<Integer> myIntStream = Stream.of(2, 9, 3, 8);
+IntSummaryStatistics stats = myIntStream.collect(Collectors.summarizingInt(x -> x.intValue()));
+System.out.println("Min: " + stats.getMin());
+System.out.println("Max: " + stats.getMax());
